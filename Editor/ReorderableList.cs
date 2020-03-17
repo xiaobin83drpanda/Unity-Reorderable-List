@@ -1091,8 +1091,8 @@ namespace Malee.Editor {
 				Style.footerBackground.Draw(rect, false, false, false, false);
 			}
 
-			Rect addRect = new Rect(rect.xMin + 4f, rect.y, 25f, Style.preButton.fixedHeight);
-			Rect subRect = new Rect(rect.xMax - 29f, rect.y, 25f, Style.preButton.fixedHeight);
+			Rect addRect = new Rect(rect.xMin + 4f, rect.y - 4f, 25f, Style.preButton.fixedHeight);
+			Rect subRect = new Rect(rect.xMax - 29f, rect.y - 4f, 25f, Style.preButton.fixedHeight);
 
 			EditorGUI.BeginDisabledGroup(!canAdd);
 
@@ -2696,4 +2696,3 @@ namespace Malee.Editor {
 		}
 	}
 }
-
